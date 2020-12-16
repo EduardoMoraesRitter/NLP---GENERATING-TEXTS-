@@ -4,7 +4,7 @@ var cheerio = require("cheerio");
 var fs = require('fs')
 var links = fs.openSync('links.txt', 'w')
 
-request("https://www.letras.com.br/racionais-mcs", function (err, res, body) {
+request("https://www.letras.com.br/cpm-22", function (err, res, body) {
     if (err) console.log("Erro :" + err);
     var $ = cheerio.load(body);
     //console.log($(".item-quick-menu"))
